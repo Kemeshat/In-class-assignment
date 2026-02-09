@@ -22,9 +22,9 @@ for (const product of products) {
         case "Dish soap":
             discount = 0.15;
             break;
-        case "novel":
-            discount = 0.25;
-            break;
+
+            default:
+            discount = 0;
     }
 
     product.promoPrice = (product.price * (1 - discount)).toFixed(2);
